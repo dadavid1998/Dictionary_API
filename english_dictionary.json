@@ -1,0 +1,34 @@
+{
+  "computer": {
+    "definition": "An electronic device for storing and processing data.",
+    "type": "noun"
+  },
+  "run": {
+    "definition": "To move swiftly on foot.",
+    "type": "verb"
+  },
+  "hello": {
+    "definition": "Used as a greeting.",
+    "type": "interjection"
+  },
+  "she": {
+    "definition": "Used to refer to a woman.",
+    "type": "pronoun"
+  },
+  "beautiful": {
+    "definition": "Pleasing the senses.",
+    "type": "adjective"
+  },
+  "eat": {
+    "definition": "To consume food.",
+    "type": "verb"
+  },
+  "dog": {
+    "definition": "A domesticated carnivorous mammal.",
+    "type": "noun"
+  },
+  "quickly": {
+    "definition": "At a fast speed.",
+    "type": "adverb"
+  }
+}
