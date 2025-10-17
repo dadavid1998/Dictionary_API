@@ -13,8 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia todo el proyecto
 COPY . .
 
-# Expone el puerto que Fly.io usará
+ENV PORT=8080
 EXPOSE 8080
 
-# Ejecuta la app con uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["python", "main.py"]
