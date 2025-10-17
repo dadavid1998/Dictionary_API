@@ -1,4 +1,5 @@
-
+import os
+import uvicorn
 import json
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -53,3 +54,7 @@ def delete_word(word: str):
             json.dump(dictionary, f, indent=2)
         return {"message": f"Word '{word}' deleted"}
     raise HTTPException(status_code=404, detail="Word not found")
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8080))  # usa la variable de entorno PORT
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
